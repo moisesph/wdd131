@@ -1,47 +1,15 @@
+:root {
+    --color-letter-background-black: #fff;
+    --background-black: rgb(51, 51, 51);
+    --background-blue: rgb(29, 77, 114);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-header span {
-    display: block;
-}
-
-
-header {
-    background-color: rgb(29, 77, 114);
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-
-
-nav ul {
-    list-style-type: none;
-}
-
-nav {
-    background-color: rgb(51, 51, 51);
-    margin: 0 auto;
-    max-width: 50rem;
-}
-
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
-    border: 1px solid white
-}
-
 
 
 body {
@@ -53,6 +21,103 @@ body {
 
 h1 {
     font-weight: 100;
+}
+
+
+header span {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 21rem;
+    margin-right: auto;
+}
+
+
+header {
+    background-color: var(--background-blue);
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--color-letter-background-black);
+}
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: var(--background-black);
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+nav a {
+    display: block;
+    color: var(--color-letter-background-black);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid var(--color-letter-background-black)
+}
+
+main h1 {
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 400;
+    justify-content: center;
+    padding: 1.7rem;
+}
+
+main div {
+    display: flex;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 1rem;
+    margin: 0.3rem;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: var(--background-blue);
+    color: white;
+}
+
+.card div {
+    padding: 1rem;
+
+}
+
+.card img {
+    height: auto;
+    width: 100%;
+    max-width: 11rem;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card-country {}
+
+
+.card div ul {
+    margin: 1.5rem;
+    margin-right: 7rem;
+}
+
+.card div ul li {
+    padding: 0.2rem;
 }
 
 @media (min-width: 640px) {
