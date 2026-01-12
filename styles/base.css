@@ -2,6 +2,7 @@
     --color-letter-background-black: #fff;
     --background-black: rgb(51, 51, 51);
     --background-blue: rgb(29, 77, 114);
+    --highlight-color: rgb(208, 205, 79);
 }
 
 
@@ -111,21 +112,35 @@ main div {
 .card h3 {
     text-align: center;
     border-bottom: 2px solid grey;
+    margin-left: 9%;
+    width: 60%;
 }
 
-.card-country {}
-
-.card-country,
-.card h3 {
-    margin-left: 2%;
+.card-country {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     width: 70%;
-
+    align-items: center;
 }
+
+.card-country figure figcaption {
+    padding-top: 0.7rem;
+}
+
+.card-country figure img {
+    display: flex;
+    justify-items: center;
+    margin-left: 0.7rem;
+}
+
 
 
 .card div ul {
     margin: 1.5rem;
     margin-right: 7rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .card div ul li {
@@ -140,4 +155,18 @@ main div {
 
 nav ul li {
     flex: 1 1 100%;
+}
+
+
+footer {
+    background-color: var(--background-blue);
+    color: var(--color-letter-background-black);
+    text-align: center;
+    padding: 1rem;
+}
+
+.highlight {
+    color: var(--highlight-color);
+    font-weight: 700;
+    font-family: hebrew;
 }
