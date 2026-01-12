@@ -11,6 +11,10 @@
     box-sizing: border-box;
 }
 
+p {
+    line-height: 1.7;
+}
+
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -106,9 +110,17 @@ main div {
 
 .card h3 {
     text-align: center;
+    border-bottom: 2px solid grey;
 }
 
 .card-country {}
+
+.card-country,
+.card h3 {
+    margin-left: 2%;
+    width: 70%;
+
+}
 
 
 .card div ul {
