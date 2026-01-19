@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 30rem) {
     header {
         display: grid;
         background-color: black;
@@ -8,8 +8,13 @@
 
     body {
         max-width: 25rem;
-        background: red !important;
-
     }
 
+    .album {
+        display: grid;
+        grid-template: 1fr / 1fr;
+        place-items: center;
+        padding: 1rem;
+
+    }
 }

@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --background-main-color: rgb(77, 189, 155);
+    --letter-background-color: rgb(252, 254, 253);
+    --main-letter-color: hsl(162, 46%, 35%);
+}
+
+
+body {
+    padding: 0 1.25rem;
+    max-width: 75rem;
+    margin: 0 auto;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+header,
+footer,
+a {
+    background-color: var(--background-main-color);
+    color: var(--letter-background-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    padding: 1rem 0 1.3rem 1rem;
+}
+
+header p {
+    font-size: 2.3rem;
+
+}
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 1rem;
+    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--main-letter-color);
+    background-color: var(--letter-background-color);
+    padding: 0.6rem;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 0.25rem;
+}
+
+
+main {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+img {
+    width: 15rem;
+    height: auto;
+    display: block;
+}
+
+.album {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    place-items: center;
+    padding: 1rem;
+
+}
+
+figure {
+    padding-bottom: 2rem;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--main-letter-color);
+    margin-top: 0.3rem;
+}
+
+
+footer {
+    padding: .4rem;
+    text-align: center;
+}
+
+.highlight {
+    font-size: 0.8rem;
+}
