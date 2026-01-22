@@ -41,6 +41,9 @@ header p {
 
 }
 
+nav {
+    display: flex;
+}
 
 nav ul {
     display: grid;
