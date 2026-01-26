@@ -52,11 +52,12 @@ body {
 
 
 section {
-
+    position: relative;
     background-color: var(--tag-background);
     margin: 1rem 1rem 1rem 2rem;
     max-width: 18rem;
-    height: auto
+    height: auto;
+    justify-content: center;
 }
 
 #box2 {
@@ -122,3 +123,15 @@ dd {
     grid-column: 2;
     text-align: start;
 }
+
+@media (min-width: 440px) {
+    #image-phone {
+        display: none
+    }
+
+    .fly::before {
+        background-color: none;
+    }
+}
+
+;
