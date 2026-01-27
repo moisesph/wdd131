@@ -33,6 +33,12 @@
         border-bottom: .2rem solid var(--background-main);
     }
 
+    .tag {
+        position: relative;
+        left: 77%;
+        transform: translateX(-50%);
+
+    }
 
     #box1,
     #box2 {
@@ -40,6 +46,11 @@
         background-color: transparent;
         width: 100%;
 
+    }
+
+    #info1,
+    #info2 {
+        padding-top: 3rem;
     }
 
     .fly::before {
