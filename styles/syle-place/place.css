@@ -97,13 +97,15 @@ section {
 
 
 .icono2::before {
-    content: "Weather  🌥️";
+    content: "Weather ";
 }
 
 .weather-title::after {
-    content: " ⛅";
-    font-size: .1rem;
-    margin-left: 10px;
+    content: url(../../images/place-images//weather-icon.svg);
+    position: absolute;
+    top: .4rem;
+    right: -2rem;
+
 }
 
 

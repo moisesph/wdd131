@@ -40,6 +40,13 @@
 
     }
 
+
+    .weather-title::after {
+
+        right: -2.8rem;
+
+    }
+
     #box1,
     #box2 {
         position: static;
@@ -58,7 +65,6 @@
         background-color: transparent;
         color: black;
         width: 100%;
-
         margin: 0 auto;
         width: 100%;
 
