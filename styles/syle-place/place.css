@@ -92,15 +92,20 @@ section {
     color: var(--letter-background);
 }
 
-.icono2::before {
-    content: "Data";
-}
 
 /* This for the homework*/
+
 
 .icono2::before {
     content: "Weather  🌥️";
 }
+
+.weather-title::after {
+    content: " ⛅";
+    font-size: .1rem;
+    margin-left: 10px;
+}
+
 
 #info1 {
     padding: 1.6rem 1.6rem 1.6rem 3rem;
