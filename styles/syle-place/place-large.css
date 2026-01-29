@@ -54,7 +54,6 @@
     }
 
     .fly::before {
-        position: block;
         text-align: center;
         background-color: transparent;
         color: black;

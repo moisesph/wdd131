@@ -128,11 +128,6 @@ dd {
     #image-phone {
         display: none
     }
-
-    .fly::before {
-        background-color: none;
-    }
-
 }
 
 ;
