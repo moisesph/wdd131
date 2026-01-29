@@ -96,9 +96,7 @@ section {
     content: "Data";
 }
 
-.icono2::after {
-    content: " 🌥️";
-}
+/* This for the homework*/
 
 .icono2::before {
     content: "Weather  🌥️";
