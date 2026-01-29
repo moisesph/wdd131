@@ -96,6 +96,10 @@ section {
     content: "Data";
 }
 
+.icono2::after {
+    content: " 🌥️";
+}
+
 .icono2::before {
     content: "Weather  🌥️";
 }
