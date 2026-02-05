@@ -29,6 +29,7 @@ header,
 footer {
     background-color: var(--background-main-color);
     color: var(--letter-background-color);
+
 }
 
 header {
@@ -200,6 +201,10 @@ figure img {
     margin-top: .4rem;
 }
 
+
+footer {
+    text-align: center;
+}
 
 
 @media (min-width: 37.5em) {

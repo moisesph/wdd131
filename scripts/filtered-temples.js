@@ -106,7 +106,6 @@ function showTemples(theTemple) {
         document.querySelector("#temple-java");
     let rows = "";
     for (const aTemple of theTemple) {
-        let dedicatedNumber = parseInt(aTemple.dedicated.split(',')[0]);
         rows += `
 <figure>
     
@@ -137,7 +136,11 @@ const filtered = (number) => {
 const oldTemplesLink = document.querySelector("#oldTemples")
 
 oldTemplesLink.addEventListener("click", () => {
-    filtered('')
+    const oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(',')[0]);
+        return year < 1900;
+    });
+    showTemples(oldTemples);
 });
 
 
