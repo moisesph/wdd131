@@ -137,10 +137,38 @@ const oldTemplesLink = document.querySelector("#oldTemples")
 
 oldTemplesLink.addEventListener("click", () => {
     const oldTemples = temples.filter(temple => {
-        const year = parseInt(temple.dedicated.split(',')[0]);
-        return year < 1900;
-    });
+        let dedicatedNumber = parseInt(temple.dedicated.split(',')[0]);
+        return dedicatedNumber < 1900
+    })
     showTemples(oldTemples);
+});
+
+
+const homeLink = document.querySelector("#home")
+
+homeLink.addEventListener("click", () => {
+    location.reload();
+});
+
+
+const newLink = document.querySelector("#new")
+
+newLink.addEventListener("click", () => {
+    const newTemplates = temples.filter(temple => {
+        let dedicatedNumber = parseInt(temple.dedicated.split(',')[0]);
+        return dedicatedNumber > 2000
+    })
+    showTemples(newTemplates);
+});
+
+const large = document.querySelector("#large")
+
+largeLink.addEventListener("click", () => {
+    const largeTemplates = temples.filter(temple => {
+        let dedicatedNumber = parseInt(temple.area);
+        return dedicatedNumber > 9000
+    })
+    showTemples(largeTemplates);
 });
 
 
