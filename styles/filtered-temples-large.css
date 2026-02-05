@@ -2,9 +2,9 @@
 
 
     body {
-        max-width: 25rem;
-
-
+        margin: 0;
+        padding: 0;
+        width: 100vw;
     }
 
     header {
@@ -12,7 +12,6 @@
         position: relative;
         min-height: auto;
         grid-template-columns: 57% 43%;
-
     }
 
     header p {
@@ -59,7 +58,9 @@
         font-size: .9rem;
     }
 
-
+    header nav {
+        margin-left: 10px;
+    }
 
 
 
