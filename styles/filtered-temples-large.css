@@ -31,7 +31,6 @@
     }
 
     nav a:hover {
-
         color: var(--main-letter-color);
         background-color: var(--letter-background-color);
         border-radius: 0.25rem;
