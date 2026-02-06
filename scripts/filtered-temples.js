@@ -147,7 +147,7 @@ oldTemplesLink.addEventListener("click", () => {
 const homeLink = document.querySelector("#home")
 
 homeLink.addEventListener("click", () => {
-    location.reload();
+    showTemples(temples);;
 });
 
 
