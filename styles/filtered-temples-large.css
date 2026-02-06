@@ -34,8 +34,6 @@
 
         color: var(--main-letter-color);
         background-color: var(--letter-background-color);
-        padding: 0.6rem;
-        border: 0.0625rem solid rgb(151, 151, 151);
         border-radius: 0.25rem;
     }
 
