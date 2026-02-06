@@ -161,16 +161,26 @@ newLink.addEventListener("click", () => {
     showTemples(newTemplates);
 });
 
-const large = document.querySelector("#large")
+const largeLink = document.querySelector("#large")
 
 largeLink.addEventListener("click", () => {
     const largeTemplates = temples.filter(temple => {
-        let dedicatedNumber = parseInt(temple.area);
-        return dedicatedNumber > 9000
+        let dedicatedNumber = temple.area;
+        return dedicatedNumber > 10000
     })
     showTemples(largeTemplates);
 });
 
+
+const smallLink = document.querySelector("#small")
+
+smallLink.addEventListener("click", () => {
+    const smallTemplates = temples.filter(temple => {
+        let dedicatedNumber = temple.area;
+        return dedicatedNumber <= 10000
+    })
+    showTemples(smallTemplates);
+});
 
 
 //document.querySelector(".res-grid").innerHTML = "";  PARA LIMPIAR
