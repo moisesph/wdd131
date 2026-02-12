@@ -33,7 +33,7 @@
 
 
             <div class="content">
-                <legend for="rating">Overall Rating</legend>
+                <label for="rating">Overall Rating</label>
                 <div class="many-rating">
                     <div><label>⭐</label><input type="radio" id="1" name="rating" value="1"></div>
                     <div><label>⭐⭐</label><input type="radio" id="2" name="rating" value="2"></div>
@@ -46,30 +46,32 @@
 
 
             <div>
-                <label class="adjust">Date of Installation <input type="date" name="installation"
+                <label class="adjust" for="installation">Date of Installation <input type="date" name="installation"
                         id="installation"></label>
             </div>
 
 
 
             <div class="content">
-                <legend>Which features did you find useful in the product?<br><i>(Check all that apply)</i></legend>
-                <label><input type="checkbox" id="abox1" value="durability"><span>Durability</span></label>
-                <label><input type="checkbox" id="abox2" value="easy"><span>Easy of Use</span></label>
-                <label><input type="checkbox" id="abox3" value="performance"><span>Performance</span></label>
-                <label><input type="checkbox" id="abox4" value="design"><span>Design</span></label>
+                <label class="spaced">Which features did you find useful in the product?<br><i>(Check all that
+                        apply)</i></label>
+                <label for="abox1"><input type="checkbox" id="abox1" value="durability"><span>Durability</span></label>
+                <label for="abox2"><input type="checkbox" id="abox2" value="easy"><span>Easy of Use</span></label>
+                <label for="abox3"><input type="checkbox" id="abox3"
+                        value="performance"><span>Performance</span></label>
+                <label for="abox4"><input type="checkbox" id="abox4" value="design"><span>Design</span></label>
             </div>
 
 
             <div class="content">
-                <legend>Written Review <span class="optional">(Optional)</span>
-                </legend>
+                <label for="review">Written Review <span class="optional">(Optional)</span>
+                </label>
                 <textarea id="review" name="review" rows="5" cols="55"></textarea>
             </div>
 
             <div class="content">
-                <legend>Your Name <span class="optional">(Optional)</span>
-                </legend>
+                <label for="fname">Your Name <span class="optional">(Optional)</span>
+                </label>
                 <input type="text" id="fname" name="fname">
             </div>
 

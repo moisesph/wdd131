@@ -44,9 +44,7 @@ form {
     display: block;
 }
 
-legend {
-    margin-bottom: .4rem;
-}
+
 
 .adjust {
     display: flex;
@@ -83,6 +81,7 @@ input[type=checkbox] {
 label span {
     position: relative;
     top: -.1rem;
+
 }
 
 .many-rating {
@@ -130,4 +129,8 @@ input[type="submit"] {
 .optional {
     color: hsl(236, 100%, 24%);
     font-size: .8rem;
+}
+
+.spaced {
+    margin-bottom: .6rem;
 }
