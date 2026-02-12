@@ -55,9 +55,14 @@ legend {
 }
 
 input[type=date],
-select {
+select,
+input[type=text],
+textarea,
+input[type="submit"] {
     padding: .3rem;
     border: none;
+    width: 100%;
+    resize: none;
 }
 
 
@@ -78,12 +83,6 @@ input[type=checkbox] {
 label span {
     position: relative;
     top: -.1rem;
-}
-
-
-select {
-    padding: .3rem;
-    width: 100%;
 }
 
 .many-rating {
@@ -109,5 +108,26 @@ select {
 .many-rating div input[type=radio] {
     width: 100%;
     height: 1.3rem;
+}
 
+#review {
+    height: 6rem;
+
+}
+
+#fname {
+    padding: .3rem;
+}
+
+
+input[type="submit"] {
+    border: 1px solid black;
+    padding: .6rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.optional {
+    color: hsl(236, 100%, 24%);
+    font-size: .8rem;
 }
