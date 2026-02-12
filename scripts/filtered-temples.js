@@ -104,7 +104,7 @@ function showTemples(theTemple) {
 
     const div =
         document.querySelector("#temple-java");
-    let rows = "";
+    let rows = `<option value="" disabled selected>Choose a Product...</option>`;
     for (const aTemple of theTemple) {
         rows += `
 <figure>

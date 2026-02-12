@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --primary: hsl(303, 88%, 9%);
+    --pop-color: hsl(0, 0%, 100%);
+    --background: hsl(300, 9%, 82%);
+    --typeface: hsl(200, 100%, 2%);
+}
+
+body {
+    max-width: 100%;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: var(--primary);
+    color: var(--pop-color);
+    font-size: .7rem;
+    padding: .7rem;
+    justify-items: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="This is a web to get feedback from the user and learn how to do it!">
+    <meta name="author" content="Moises Pleytez">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+    <script src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <label for="product">Product Name</label>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Choose a Product...</option>
+                <div class="allOptions"></div>
+            </select>
+
+
+
+
+            <label>Overall Rating</label>
+            <label>Date of Installation</label>
+            <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
+            <label>Written Review <font color="00087c">Optional</font></label>
+            <label>Your Name <font color="00087c">Optional</font></label>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🏆 Moises Pleytez 🏆 Honduras</p>
+        <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
