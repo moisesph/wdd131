@@ -9,8 +9,8 @@
     <meta name="author" content="Moises Pleytez">
 
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js"></script>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -19,21 +19,57 @@
     </header>
 
     <main>
+
         <form action="review.html" method="get">
-            <label for="product">Product Name</label>
-            <select name="product" id="product" required>
-                <option value="" disabled selected>Choose a Product...</option>
-                <div class="allOptions"></div>
-            </select>
+            <div class="content">
+                <label for="product">Product Name</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                    <option value="Dyson V15">Dyson V15</option>
+                    <option value="PC Gamer Overprice">PC Gamer Overprice</option>
+                    <option value="Chair Gamer 16K">Chair Gamer 16K</option>
+                </select>
+            </div>
+
+
+            <div class="content">
+                <legend for="rating">Overall Rating</legend>
+                <div class="many-rating">
+                    <div><label>⭐</label><input type="radio" id="1" name="rating" value="1"></div>
+                    <div><label>⭐⭐</label><input type="radio" id="2" name="rating" value="2"></div>
+                    <div><label>⭐⭐⭐</label><input type="radio" id="3" name="rating" value="3"></div>
+                    <div><label>⭐⭐⭐⭐</label><input type="radio" id="4" name="rating" value="4"></div>
+                    <div><label>⭐⭐⭐⭐⭐</label><input type="radio" id="5" name="rating" value="5"></div>
+                </div>
+            </div>
 
 
 
+            <div>
+                <label class="adjust">Date of Installation <input type="date" name="installation"
+                        id="installation"></label>
+            </div>
 
-            <label>Overall Rating</label>
-            <label>Date of Installation</label>
-            <label>Which features did you find useful in the product?<br>(Check all that apply)</label>
-            <label>Written Review <font color="00087c">Optional</font></label>
-            <label>Your Name <font color="00087c">Optional</font></label>
+
+
+            <div class="content">
+                <legend>Which features did you find useful in the product?<br><i>(Check all that apply)</i></legend>
+                <label><input type="checkbox" id="abox1" value="durability"><span>Durability</span></label>
+                <label><input type="checkbox" id="abox2" value="easy"><span>Easy of Use</span></label>
+                <label><input type="checkbox" id="abox3" value="performance"><span>Performance</span></label>
+                <label><input type="checkbox" id="abox4" value="design"><span>Design</span></label>
+            </div>
+
+
+            <div class="content">
+                <legend>Written Review <font color="00087c">Optional</font>
+                </legend>
+                <input type="text" id="review" name="review">
+            </div>
+
+
+            <legend>Your Name <font color="00087c">Optional</font>
+            </legend>
 
             <input type="submit" value="Post Review">
 
@@ -44,6 +80,7 @@
     <footer>
         <p>©<span id="currentyear"></span> 🏆 Moises Pleytez 🏆 Honduras</p>
         <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+
     </footer>
 
 </body>

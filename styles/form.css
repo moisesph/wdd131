@@ -14,7 +14,7 @@
 
 body {
     max-width: 100%;
-    width: 30rem;
+    width: 23rem;
     margin: 0 auto;
 }
 
@@ -25,4 +25,89 @@ footer {
     font-size: .7rem;
     padding: .7rem;
     justify-items: center;
+}
+
+form {
+    background-color: var(--background);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: .3rem;
+}
+
+.content,
+.adjust {
+    margin-bottom: .8rem;
+}
+
+.content label,
+.content legend {
+    display: block;
+}
+
+legend {
+    margin-bottom: .4rem;
+}
+
+.adjust {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input[type=date],
+select {
+    padding: .3rem;
+    border: none;
+}
+
+
+input[type=checkbox] {
+
+    -webkit-transform: scale(1.28);
+}
+
+#abox1,
+#abox2,
+#abox3,
+#abox4 {
+    margin-right: .5rem;
+    margin-bottom: .4rem;
+
+}
+
+label span {
+    position: relative;
+    top: -.1rem;
+}
+
+
+select {
+    padding: .3rem;
+    width: 100%;
+}
+
+.many-rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+
+}
+
+.many-rating div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.many-rating div label {
+    display: flex;
+    justify-content: center;
+    font-size: .4rem;
+    margin-bottom: .2rem;
+}
+
+.many-rating div input[type=radio] {
+    width: 100%;
+    height: 1.3rem;
+
 }
