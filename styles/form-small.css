@@ -1,11 +1,15 @@
 @media(max-width: 600px) {
 
-    .many-rating {
-        display: flex;
-        flex-direction: column;
+    label {
+        justify-self: center;
     }
 
-    label {
-        align-items: center;
+    .mobil-content {
+        justify-self: center;
+    }
+
+    .mobil-content label {
+        justify-self: start;
+
     }
 }
