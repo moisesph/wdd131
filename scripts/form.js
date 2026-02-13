@@ -24,7 +24,7 @@ const products = [
         name: "warp equalizer",
         averagerating: 5.0
     }
-];
+]
 
 function showProducts(aproduct) {
 
@@ -33,7 +33,7 @@ function showProducts(aproduct) {
     let rows = `<option value="" disabled selected>Select a Product ...</option>`;
     for (const product of aproduct) {
         rows += `
-<option value="${product.name}">${product.name}</option>
+<option value="${product.id}">${product.name}</option>
 `
     }
     div.innerHTML = rows;
