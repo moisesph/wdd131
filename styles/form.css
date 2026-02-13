@@ -16,6 +16,7 @@ body {
     max-width: 100%;
     width: 23rem;
     margin: 0 auto;
+
 }
 
 header,
@@ -25,6 +26,14 @@ footer {
     font-size: .7rem;
     padding: .7rem;
     justify-items: center;
+}
+
+main {
+    padding-top: 2.5rem;
+}
+
+footer {
+    margin-top: 2.4rem;
 }
 
 form {
