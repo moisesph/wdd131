@@ -25,7 +25,8 @@
             <div class="content">
                 <label for="product">Product Name</label>
                 <select name="product" id="product" required>
-
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <span id="jsProducts"></span>>
                 </select>
             </div>
 
@@ -74,7 +75,7 @@
             </div>
 
             <div>
-                <input type="submit" value="Post Review">
+                <input type="submit" value="Post Review" id="abutton">
             </div>
 
         </form>

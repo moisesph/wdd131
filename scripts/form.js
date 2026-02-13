@@ -29,8 +29,8 @@ const products = [
 function showProducts(aproduct) {
 
     const div =
-        document.querySelector("#product");
-    let rows = `<option value="" disabled selected>Select a Product ...</option>`;
+        document.querySelector("#jsProducts");
+    let rows = ``;
     for (const product of aproduct) {
         rows += `
 <option value="${product.id}">${product.name}</option>
@@ -42,3 +42,16 @@ function showProducts(aproduct) {
 
 
 showProducts(products);
+
+
+
+// ////////////////////////////////////////////
+
+
+//const reviewCount = document.getElementById("abutton");
+
+let reviewCount = Number(window.localStorage.getItem("reviews-counts")) || 0;
+
+reviewCount++;
+
+localStorage.setItem("reviews-counts")
