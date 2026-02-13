@@ -134,6 +134,3 @@ input[type="submit"] {
 .spaced {
     margin-bottom: .6rem;
 }
-
-
-@media(max-width: 600px) {}

@@ -1,1 +1,11 @@
-@media(max-width: 600px) {}
+@media(max-width: 600px) {
+
+    .many-rating {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        align-items: center;
+    }
+}
