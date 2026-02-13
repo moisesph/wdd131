@@ -5,7 +5,7 @@ let visitsNum = Number(window.localStorage.getItem("reviews-counts")) || 0;
 if (visitsNum !== 0) {
     displayVisit.textContent = visitsNum;
 } else {
-    displayVisit.textContent = `1, Welcome, this is your first review!!`
+    displayVisit.textContent = `Welcome, this is your first review!!`
 }
 
 visitsNum++;
