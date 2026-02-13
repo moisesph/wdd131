@@ -48,10 +48,3 @@ showProducts(products);
 // ////////////////////////////////////////////
 
 
-const displayVisit = document.querySelector(".visits");
-
-let visitsNum = Number(window.localStorage.getItem("reviews-counts")) || 0;
-
-visitsNum++;
-
-localStorage.setItem("reviews-counts, visitsNumb")
