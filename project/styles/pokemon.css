@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: hsl(28, 85%, 62%);
+    --pop-color: hsl(35, 87%, 61%);
+    --background: hsl(215, 62%, 31%);
+    --typeface: hsl(70, 100%, 67%);
+}
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 75rem;
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Comic Relief", cursive;
+}
+
+
+header,
+footer {
+    background-color: var(--primary);
+    padding: 1rem;
+
+    align-items: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    padding: 1rem 0 1.3rem 1rem;
+}
+
+header img {
+    width: 2rem;
+}
+
+main {
+    max-width: 75rem;
+    text-align: center;
+
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+nav {
+    max-width: 700px;
+    margin: 1rem auto;
+    display: flex;
+
+
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    list-style: none;
+    text-align: center;
+
+}
+
+ul a {
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+li {
+    margin: 0 1rem;
+    font-size: 1.rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-letter-color);
+    background-color: var(--letter-background-color);
+    border-radius: 0.25rem;
+}
+
+
+#low-case {
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+#regions img {
+    width: 10rem;
+}
+
+
+#gamesp img {
+    width: 22rem;
+    height: 2rem;
+}
+
+
+#emu img {
+    width: 22rem;
+    height: 8rem;
+}
