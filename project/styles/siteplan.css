@@ -13,25 +13,30 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    width: 75rem;
+    max-width: 75rem;
+    width: 95%;
     margin: 0 auto;
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 header,
 footer {
     background-color: var(--primary);
-    margin-bottom: 2rem;
+
     padding: 1rem;
 }
 
 footer {
-    margin-top: 25rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
 h1,
 h2 {
-    font-family: "comic Rlief", cursive;
+    font-family: "Comic Relief", cursive;
 }
 
 h2 {
@@ -74,7 +79,8 @@ h2 {
     margin: 0 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30rem 30rem;
+    grid-template-rows: auto;
+    justify-items: center;
 }
 
 p {
@@ -89,13 +95,22 @@ img {
 @media (max-width: 600px) {
     #colshow {
         grid-template-columns: 1fr;
+
+        margin: 0;
+
+        grid-template-rows: none;
+    }
+
+    img {
+        margin: 1rem 0;
     }
 
     body {
-        width: 35rem;
+        width: 100%;
     }
 
-    main {
+    h2,
+    p {
         padding: 0 .7rem;
     }
 
