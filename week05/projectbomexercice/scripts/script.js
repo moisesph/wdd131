@@ -8,6 +8,8 @@ chaptersArray.forEach(chapter => {
     displayList(chapter);
 });
 
+
+
 function displayList(item) {
     let li = document.createElement('li');
     let deleteButton = document.createElement('button');
