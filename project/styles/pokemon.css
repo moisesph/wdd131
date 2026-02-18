@@ -63,7 +63,7 @@ nav {
 
 ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     list-style: none;
     text-align: center;
@@ -207,4 +207,56 @@ img:hover {
     color: var(--typeface);
     border-radius: 1.3rem;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    flex: 1 1 100%;
+
+}
+
+.open a {
+    display: block;
 }
