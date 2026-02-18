@@ -28,21 +28,21 @@
     nav a {
         display: block;
         text-decoration: none;
-        color: var(--letter-background-color);
         border-top: 0.0625rem solid rgba(255, 255, 255, 0.1);
         color: white;
 
     }
 
     nav a:hover {
-        color: var(--main-letter-color);
-        background-color: var(--letter-background-color);
+        color: black;
         border-radius: 0.25rem;
+
     }
 
 
     .navigation a {
         flex: 1 1 100%;
+
     }
 
     #menu {

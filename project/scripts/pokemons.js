@@ -120,6 +120,9 @@ const hoenPokemons = [
 
 function showPokemons(pokemons) {
     const div = document.querySelector('#indipokemon');
+
+
+    if (!div) return;
     let rows = "";
 
     for (const pokemon of pokemons) {
@@ -135,7 +138,7 @@ function showPokemons(pokemons) {
                 </ul> 
             </div>
 `}
-    div.innerHTML = rows
+    div.innerHTML = rows;
 }
 
 
@@ -162,6 +165,8 @@ function computeStronger(pokemons) {
 
 function recommended(stronger) {
     const div = document.querySelector('#recomendation');
+
+    if (!div) return;
     let rows = "";
 
     rows += `
@@ -171,7 +176,7 @@ function recommended(stronger) {
                     <li><em><strong>${stronger.name}</strong></em></li>
                     
 `
-    div.innerHTML = rows
+    div.innerHTML = rows;
 }
 
 

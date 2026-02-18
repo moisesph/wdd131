@@ -14,7 +14,7 @@
 
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", ;
     max-width: 75rem;
     width: 95%;
     margin: 0 auto;
@@ -33,7 +33,6 @@ footer {
 header {
     display: grid;
     grid-template-columns: 40% 60%;
-    align-items: center;
     padding: 1rem 0 1.3rem 1rem;
 
 }
@@ -66,31 +65,26 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    list-style: none;
-    text-align: center;
+
+
 
 }
 
 ul a {
-    padding: 1rem;
+
     text-align: center;
-    text-decoration: none;
     color: #fff;
 
 }
 
 li {
     margin: 0 1rem;
-    font-size: 1.rem;
+    font-size: 1rem;
 }
 
-nav a {
-    text-decoration: none;
-}
 
 a:hover {
-    color: var(--main-letter-color);
-    background-color: var(--letter-background-color);
+    color: black;
     border-radius: 0.25rem;
 }
 
@@ -176,7 +170,6 @@ img:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     align-items: stretch;
 }
 
