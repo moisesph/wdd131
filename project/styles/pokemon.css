@@ -110,9 +110,21 @@ div {
 
 
 
-img {
-    object-fit: cover;
+
+input {
+    padding: .3rem;
+    margin: 0 0 .6rem 0;
+    background-color: var(--pop-color);
+    transition: background-color 0.3s ease;
 }
+
+input:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+
+
 
 #select-region {
     margin: 0;
@@ -122,11 +134,25 @@ img {
     margin: 0 6rem;
 }
 
+img {
+    border-radius: .4rem;
+    filter: drop-shadow(0 0 0px rgba(0, 0, 0, 0));
+    transition: filter .4s ease;
+}
+
+img:hover {
+    filter: drop-shadow(0 -2mm 4mm rgb(255, 193, 34));
+    cursor: pointer;
+}
+
 
 #regions img {
     width: 10rem;
     margin: 0 1.5rem;
+
 }
+
+
 
 
 
@@ -182,6 +208,8 @@ img {
     border-radius: 1.3rem;
 
 }
+
+
 
 
 @media screen and (max-width: 30rem) {

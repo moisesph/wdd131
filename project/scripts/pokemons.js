@@ -130,7 +130,7 @@ function showPokemons(pokemons) {
 }
 
 
-function recomended(pokemon) {
+function recomended(pokemons) {
     const div = document.querySelector('#recomendation');
     let rows = "";
 
@@ -140,6 +140,7 @@ function recomended(pokemon) {
                     <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
                 <ul class="infop">
                     <li><strong>Name:</strong> ${pokemon.name}</li>
+                    
 `}
     div.innerHTML = rows
 }
@@ -164,7 +165,7 @@ if (savedData && savedData.region) {
 
     if (region === "kanto") {
         showPokemons(kantoPokemons)
-        recomended(kantoPokemons)
+
 
 
     }
@@ -172,7 +173,7 @@ if (savedData && savedData.region) {
 
     else if (region === "johto") {
         showPokemons(johtoPokemons)
-        recomended(kantoPokemons)
+
     }
 
     else if (region === 'hoen') {
