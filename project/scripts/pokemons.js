@@ -139,31 +139,45 @@ function showPokemons(pokemons) {
 }
 
 
-function recomended(pokemons) {
+///////////////////////////////////////////////////////////////////
+
+
+function sumPower(pokemon) {
+
+    let power = pokemon.hp + pokemon.attack + pokemon.defense + pokemon.speed;
+    return power
+}
+
+function computeStronger(pokemons) {
+    let stronger = pokemons[0];
+
+    pokemons.forEach(pokemon => {
+
+        if (sumPower(pokemon) > sumPower(stronger)) {
+            stronger = pokemon;
+        }
+    });
+    return stronger
+}
+
+function recommended(stronger) {
     const div = document.querySelector('#recomendation');
     let rows = "";
 
-    for (const pokemon of pokemons) {
-        rows += `
+    rows += `
       <div>
-                    <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
+                    <img src="${stronger.imageUrl}" alt="${stronger.name}">
                 <ul class="infop">
-                    <li><strong>Name:</strong> ${pokemon.name}</li>
+                    <li><strong>Name:</strong> ${stronger.name}</li>
                     
-`}
+`
     div.innerHTML = rows
 }
 
 
-function calculateMostPowerful(pokemons) {
 
-    let gigaChad = []
 
-    for (const pokemon of pokemons) {
-        Power = pokemon.hp + pokemon.attack + pokemon.defense + pokemon.speed
-        gigaChad.push(pokemon.name)
-    }
-}
+
 
 
 const savedData = JSON.parse(localStorage.getItem('user_selection'))
@@ -174,19 +188,21 @@ if (savedData && savedData.region) {
 
     if (region === "kanto") {
         showPokemons(kantoPokemons)
-
-
-
+        stronger = computeStronger(kantoPokemons)
+        recommended(stronger)
     }
 
 
     else if (region === "johto") {
         showPokemons(johtoPokemons)
-
+        stronger = computeStronger(johtoPokemons)
+        recommended(stronger)
     }
 
     else if (region === 'hoen') {
         showPokemons(hoenPokemons)
+        stronger = computeStronger(hoenPokemons)
+        recommended(stronger)
     }
 
 
