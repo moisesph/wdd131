@@ -168,7 +168,7 @@ function recommended(stronger) {
       <div>
                     <img src="${stronger.imageUrl}" alt="${stronger.name}">
                 <ul class="infop">
-                    <li><strong>${stronger.name}</strong></li>
+                    <li><em><strong>${stronger.name}</strong></em></li>
                     
 `
     div.innerHTML = rows
