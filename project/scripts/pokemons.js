@@ -1,6 +1,6 @@
 document.getElementById('indipokemon')
 
-// IA was used to help to know write this code but all the logic was think by me
+// IA was used to help me to find some code issues but the ideas and logical were written and made by me
 
 
 const kantoPokemons = [
@@ -130,6 +130,30 @@ function showPokemons(pokemons) {
 }
 
 
+function recomended(pokemon) {
+    const div = document.querySelector('#recomendation');
+    let rows = "";
+
+    for (const pokemon of pokemons) {
+        rows += `
+      <div>
+                    <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
+                <ul class="infop">
+                    <li><strong>Name:</strong> ${pokemon.name}</li>
+`}
+    div.innerHTML = rows
+}
+
+
+function calculateMostPowerful(pokemons) {
+
+    let gigaChad = []
+
+    for (const pokemon of pokemons) {
+        Power = pokemon.hp + pokemon.attack + pokemon.defense + pokemon.speed
+        gigaChad.push(pokemon.name)
+    }
+}
 
 
 const savedData = JSON.parse(localStorage.getItem('user_selection'))
@@ -140,11 +164,15 @@ if (savedData && savedData.region) {
 
     if (region === "kanto") {
         showPokemons(kantoPokemons)
+        recomended(kantoPokemons)
+
+
     }
 
 
     else if (region === "johto") {
         showPokemons(johtoPokemons)
+        recomended(kantoPokemons)
     }
 
     else if (region === 'hoen') {
@@ -156,23 +184,4 @@ if (savedData && savedData.region) {
 
 
 
-
-
-
-
-function calculateMostPowerfull(pokemons) {
-    const div = document.querySelector('#recomendation');
-    let gigaChad = []
-
-
-    for (const pokemon of pokemons) {
-        Power = pokemon.hp + pokemon.attack + pokemon.defense + pokemon.speed
-        gigaChad.push(pokemon.name)
-
-        console.log(power);
-        // In this foor loop I will create a new element for the class gigachad, but right now is a array
-    }
-
-
-}
 

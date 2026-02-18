@@ -1,3 +1,5 @@
+// IA was used to help me to remember how to use JSON and the construction of the code but the logic was made for me
+
 
 const regionUsed = document.getElementById('sub-region');
 
@@ -19,5 +21,3 @@ regionUsed.addEventListener('submit', function (event) {
 
 })
 
-
-// IA was used to help to know how to write parts of this code but all the logic was think by me
