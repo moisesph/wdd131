@@ -124,7 +124,7 @@ function showPokemons(pokemons) {
 
     for (const pokemon of pokemons) {
         rows += `
-      <div>
+      <div class = 'indie'>
                     <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
                 <ul class="infop">
                     <li><strong>Name:</strong> ${pokemon.name}</li>

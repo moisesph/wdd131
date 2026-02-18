@@ -20,6 +20,8 @@
         display: flex;
         flex-direction: column;
 
+
+
     }
 
     body {
@@ -81,11 +83,6 @@
 
 
 
-
-
-
-
-
     #emu img {
         width: 21rem;
     }
@@ -94,6 +91,23 @@
     input[type="radio"] {
         display: none;
     }
+
+
+
+    #indipokemon,
+    .indie {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .indie img,
+    .infop {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+
 
 
 
