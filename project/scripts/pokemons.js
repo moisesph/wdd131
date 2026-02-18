@@ -125,7 +125,7 @@ function showPokemons(pokemons) {
     for (const pokemon of pokemons) {
         rows += `
       <div class = 'indie'>
-                    <img src="${pokemon.imageUrl}" alt="${pokemon.name}">
+                    <img loading="lazy" src="${pokemon.imageUrl}" alt="${pokemon.name}">
                 <ul class="infop">
                     <li><strong>Name:</strong> ${pokemon.name}</li>
                     <li><strong>HP:</strong> ${pokemon.hp}</li>
@@ -166,7 +166,7 @@ function recommended(stronger) {
 
     rows += `
       <div>
-                    <img src="${stronger.imageUrl}" alt="${stronger.name}">
+                    <img loading="lazy" src="${stronger.imageUrl}" alt="${stronger.name}">
                 <ul class="infop">
                     <li><em><strong>${stronger.name}</strong></em></li>
                     
