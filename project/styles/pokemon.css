@@ -114,13 +114,20 @@ img {
     object-fit: cover;
 }
 
+#select-region {
+    margin: 0;
+}
 
+#select-region input {
+    margin: 0 6rem;
+}
 
 
 #regions img {
     width: 10rem;
     margin: 0 1.5rem;
 }
+
 
 
 #gamesp img {
@@ -160,6 +167,7 @@ img {
     object-fit: contain;
     max-width: 18.75rem;
     max-height: 12.5rem;
+    min-height: 12.5rem;
 }
 
 

@@ -1,3 +1,5 @@
+<!--The websites were you can download the games are not mine, but I put them there as an extra feature -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +13,7 @@
     <link rel="stylesheet" href="styles/pokemon.css">
     <script src="scripts/mainpokemon.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/pokemons.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,24 +31,32 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="https://www.romsgames.net/tags/pokemon-roms/">Games</a></li>
                     <li><a href="https://www.romsgames.net/emulators/">Emulators</a>
-                        <!--These are not my websites, but they are good pages -->
+
                 </ul>
             </nav>
         </header>
         <main>
+
             <h2>Regions</h2>
             <div id="regions">
-                <a href="pokemons.html">
-                    <img src="images/kanto.webp" alt="Kanto Map"></a>
-                <a href="pokemons.html">
-                    <img src="images/johto.webp" alt="Johto Map"></a>
-                <a href="pokemons.html"><img src="images/hoen.webp" alt="Hoen Map"></a>
-                <p>Select Which Pokemon would be the best for each region, inside you can also download the game!
+
+                <label for="kanto"><img src="images/kanto.webp" alt="Kanto Map"></label>
+                <label for="johto"><img src="images/johto.webp" alt="Johto Map"></label>
+                <label for="hoen"><img src="images/hoen.webp" alt="Hoen Map"></label>
+
+                <div id="select-region">
+                    <form action="pokemons.html" id="sub-region">
+                        <input type="radio" id="kanto" name="regionSelected" value="kanto" required>
+                        <input type="radio" id="johto" name="regionSelected" value="johto" required>
+                        <input type="radio" id="hoen" name="regionSelected" value="hoen" required>
+                </div>
+
+                <input type="submit" value="View">
+                </form>
+
+                <p>Select Which Pokemon would be the best for each region!
                 </p>
-
             </div>
-
-
 
 
             <div id="gamesp">

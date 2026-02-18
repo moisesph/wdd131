@@ -1,5 +1,7 @@
 document.getElementById('indipokemon')
 
+// IA was used to help to know write this code but all the logic was think by me
+
 
 const kantoPokemons = [
     {
@@ -31,6 +33,82 @@ const kantoPokemons = [
     },
 ];
 
+
+
+const johtoPokemons = [
+
+    {
+        name: "Cyndaquil",
+        hp: 39,
+        attack: 52,
+        defense: 43,
+        speed: 65,
+        imageUrl:
+            "https://easycdn.es/1/poke/i/pokedex/ken/155.png"
+    },
+
+    {
+        name: "Totodile",
+        hp: 50,
+        attack: 65,
+        defense: 64,
+        speed: 43,
+        imageUrl:
+            "https://easycdn.es/1/poke/i/pokedex/ken/158.png"
+    },
+
+    {
+        name: "Chikorita",
+        hp: 45,
+        attack: 49,
+        defense: 65,
+        speed: 45,
+        imageUrl:
+            "https://easycdn.es/1/poke/i/pokedex/ken/152.png"
+    },]
+
+
+
+const hoenPokemons = [
+
+    {
+        name: "Torchic",
+        hp: 45,
+        attack: 60,
+        defense: 40,
+        speed: 45,
+        imageUrl:
+            "https://easycdn.es/1/poke/i/pokedex/ken/255.png"
+    },
+
+    {
+        name: "Mudkip",
+        hp: 50,
+        attack: 70,
+        defense: 50,
+        speed: 40,
+        imageUrl:
+            "https://easycdn.es/1/poke/i/pokedex/ken/258.png"
+    },
+
+    {
+        name: "Treecko",
+        hp: 40,
+        attack: 45,
+        defense: 35,
+        speed: 70,
+        imageUrl:
+            "https://easycdn.es/1/poke/i/pokedex/ken/252.png"
+    },
+
+
+];
+
+
+// Pictures taken from https://pokemaster.es/
+
+
+
 function showPokemons(pokemons) {
     const div = document.querySelector('#indipokemon');
     let rows = "";
@@ -51,13 +129,38 @@ function showPokemons(pokemons) {
     div.innerHTML = rows
 }
 
-showPokemons(kantoPokemons)
-
-// Pictures taken from https://easycdn.es/1/poke/i/pokedex/ken/6.png
 
 
 
-function calculateMostPowerfull(pokemon) {
+const savedData = JSON.parse(localStorage.getItem('user_selection'))
+
+if (savedData && savedData.region) {
+    const region = savedData.region
+
+
+    if (region === "kanto") {
+        showPokemons(kantoPokemons)
+    }
+
+
+    else if (region === "johto") {
+        showPokemons(johtoPokemons)
+    }
+
+    else if (region === 'hoen') {
+        showPokemons(hoenPokemons)
+    }
+
+
+}
+
+
+
+
+
+
+
+function calculateMostPowerfull(pokemons) {
     const div = document.querySelector('#recomendation');
     let gigaChad = []
 
@@ -66,8 +169,10 @@ function calculateMostPowerfull(pokemon) {
         Power = pokemon.hp + pokemon.attack + pokemon.defense + pokemon.speed
         gigaChad.push(pokemon.name)
 
+        console.log(power);
         // In this foor loop I will create a new element for the class gigachad, but right now is a array
     }
 
 
 }
+
