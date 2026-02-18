@@ -32,7 +32,7 @@ const kantoPokemons = [
 ];
 
 function showPokemons(pokemons) {
-    const div = document.querySelector('#indipokemon')
+    const div = document.querySelector('#indipokemon');
     let rows = "";
 
     for (const pokemon of pokemons) {
@@ -54,3 +54,20 @@ function showPokemons(pokemons) {
 showPokemons(kantoPokemons)
 
 // Pictures taken from https://easycdn.es/1/poke/i/pokedex/ken/6.png
+
+
+
+function calculateMostPowerfull(pokemon) {
+    const div = document.querySelector('#recomendation');
+    let gigaChad = []
+
+
+    for (const pokemon of pokemons) {
+        Power = pokemon.hp + pokemon.attack + pokemon.defense + pokemon.speed
+        gigaChad.push(pokemon.name)
+
+        // In this foor loop I will create a new element for the class gigachad, but right now is a array
+    }
+
+
+}
